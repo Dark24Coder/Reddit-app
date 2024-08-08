@@ -1,0 +1,134 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #555;
+}
+
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #272729;
+    border-radius: 20px;
+    padding: 0 350px;
+    padding-inline-start: 2%;
+    cursor: pointer;
+}
+
+.input-text {
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d7dadc;
+    font-size: 16px;
+    display: flex;
+}
+
+.icon {
+    color: #d7dadc;
+    background: transparent;
+    cursor: pointer;
+    flex: 1;
+}
+
+.input-text::placeholder {
+    color: #8BA2AD;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.searchbar:hover{
+    background-color: #3a3a3f;
+}
+
+.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: #272729;
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #d7dadc;
+}
+
+.nav-connect {
+    background-color: #e53812;
+    color: #fff;
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.menu-container {
+    display: flex;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #d7dadc;
+    margin-left: 10px;
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    color: #d7dadc;
+    z-index: 1;
+}
+
+.menu-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+.menu-dropdown li{
+    background-color: #181C1F;
+    /* color: #fff;border: 1px solid red;
+    border-radius: 20px; */
+}
+
+.menu-dropdown li {
+    padding: 15px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.nav-links{
+    color: #fff;
+    background: transparent;
+}
