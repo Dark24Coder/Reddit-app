@@ -1,8 +1,8 @@
-.sidebar{
+.sidebar {
     padding: 15px 10px;
 }
 
-.sidebar-content{
+.sidebar-content {
     position: fixed;
     width: 250px;
     top: 75px;
@@ -15,7 +15,11 @@
     border-right: 1px solid #555;
 }
 
-.navigation-icons{
+.sections {
+    flex-grow: 1; /* Permet au contenu de grandir pour occuper l'espace disponible */
+}
+
+.navigation-icons {
     color: #DBE4E9;
     display: flex;
     flex-direction: column;
@@ -23,11 +27,11 @@
     border-bottom: 1px solid #555;
 }
 
-.icons2{
+.icons2 {
     margin-bottom: 20px;
 }
 
-.navigation-icons h6{
+.navigation-icons h6 {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -35,70 +39,72 @@
     margin: 0;
 }
 
-.navigation-icons h6 a{
+.navigation-icons h6 a {
     text-decoration: none;
     color: inherit;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.dernier{
+.dernier {
     border-bottom: 1px solid #555;
     padding-bottom: 20px;
     padding-top: 20px;
-    
 }
 
-.dernier h5{
+.dernier h5 {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 68px;
     color: #748791;
+    font-weight: 300;
 }
 
-.thematique{
+.thematique {
     border-bottom: 1px solid #555;
     padding-bottom: 20px;
     padding-top: 20px;
-    
 }
 
-.thematique h5{
+.thematique h5 {
     display: flex;
     align-items: center;
-    gap: 90px;
+    gap: 88px;
     color: #748791;
-
+    font-weight: 300;
 }
 
-.section{
+.section {
     padding-top: 17px;
     padding-bottom: 17px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    padding-left: 5px;
+    padding-left: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.description{
+.description {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-.description p{
+.description p {
     color: #DBE4E9;
 }
 
-.section-desc{
+.section-one {
     display: flex;
     align-items: center;
-    gap: 33px;
+    gap: 38px;
 }
 
-.section ul{
+.section ul {
     list-style: none;
     padding-left: 8px;
     padding-bottom: 15px;
@@ -106,24 +112,116 @@ a{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-left: 1px solid #555;
+    margin-left: 10px;
 }
 
-.section ul li a{
-    padding-left: 15px;
+.section ul li a {
+    padding-left: 12px;
     font-size: 13px;
-    font-weight: 500;
-    
+    font-weight: 400;
     flex-direction: column;
     gap: 20px;
 }
 
-.section li a{
+.section li a {
     display: flex;
 }
 
-/* .section h6{
+.section-two {
     display: flex;
     align-items: center;
-    gap: 20px;  
+    gap: 114px;
+}
+
+.section-three {
+    display: flex;
+    align-items: center;
+    gap: 61px;
+}
+
+.section-four {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.section-five {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.section-six {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.ressources {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #555;
+    font-size: 13px;
+    font-weight: 300;
+    color: #748791;
+}
+
+.ressources p {
+    display: flex;
+    gap: 88px;
+}
+
+.ressources ul {
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ressources li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     color: #DBE4E9;
-} */
+}
+
+.cn {
+    border-bottom: 1px solid #555;
+    /* padding-top: 15px; */
+    padding-bottom: 20px;
+}
+
+footer {
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: auto; /* Fait en sorte que le footer se colle en bas */
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Style de la scrollbar pour les navigateurs Webkit (Chrome, Safari) */
+.sidebar-content::-webkit-scrollbar {
+    width: 2px; /* Largeur de la scrollbar */
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+    background: #333; /* Couleur de l'arrière-plan du track */
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background: #555; /* Couleur de la scrollbar */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Style de la scrollbar pour Firefox */
+.sidebar-content {
+    scrollbar-width: thin; /* Taille de la scrollbar */
+    scrollbar-color: #555 #333; /* Couleurs de la scrollbar (pouce et track) */
+}
